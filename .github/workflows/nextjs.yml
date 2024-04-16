@@ -1,0 +1,22 @@
+name: Deploy Next.js site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+jobs:
+  build-next-js-app:
+    runs-on: ubuntu-latest
+    name: Build Next.js Application
+    steps:
+      - name: SSH Remote Commands
+        uses: appleboy/ssh-action@v0.1.4
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          timeout: 40s
+          scripts: |
+            echo "JOAT.GG CI/CD Test!"
