@@ -18,5 +18,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           timeout: 40s
-          scripts: |
-            echo "JOAT.GG CI/CD Test!"
+          script: |
+             echo "JOAT.GG CI/CD Test!"
