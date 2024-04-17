@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Logo from '../../img/JOAT_LOGO.png'
-import searchIco from '../../img/icons8-수색.svg'
+import Logo from '../img/JOAT_LOGO.png'
+import searchIco from '../img/icons8-수색.svg'
 const Home = () => {
   return (
     <>
