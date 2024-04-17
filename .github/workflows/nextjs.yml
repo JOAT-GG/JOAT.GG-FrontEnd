@@ -30,7 +30,6 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "."
           target: "~/Desktop/frontend"
-          rm: true
 
     
       - name: SSH Remote Commands
