@@ -11,7 +11,7 @@ COPY . .
 RUN npm install
 
 # Next.js 프로덕션 빌드
-RUN npm run build
+# RUN npm run build
 
 # 앱 실행 포트 설정
 EXPOSE 3000
