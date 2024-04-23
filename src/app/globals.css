@@ -15,14 +15,16 @@
     --background-end-rgb: 255, 255, 255;
   }
 }
-
+html, body {
+  height: 100%;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background:
     rgb(var(--background-start-rgb));
   width: 100%;
-  max-width: unset;
-  height: 100%;
+  /*max-width: unset;*/
+
   margin: 0 auto;
 }
 

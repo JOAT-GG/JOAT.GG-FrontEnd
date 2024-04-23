@@ -7,10 +7,9 @@ type TierType = {
 }
 
 const UserTierData = ({Title, Tier, LP, Win, Rate}:TierType) => {
-  console.log(Title,Tier,LP,Win,Rate)
   return (
-    <div className="p-[14px] bg-gray-700 w-1/3 rounded-xl">
-        <div className="text-white mb-3 pl-2">{Title}</div>
+    <div className="mt-2 p-[14px] bg-gray-700 w-[426px] rounded-md">
+        <div className="text-gray-400 font-semibold mb-4 pl-2">{Title}</div>
         <div className="flex flex-row">
           <div className="flex flex-row gap-[20px]">
             <div className="w-[65px] h-[65px] rounded-full bg-white" ></div>

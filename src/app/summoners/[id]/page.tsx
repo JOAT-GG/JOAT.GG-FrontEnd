@@ -1,9 +1,10 @@
 import Skeleton from "@/components/skeleton";
 import UserInfo from "@/components/userComponent/userInfo";
 import UserTierData from "@/components/userComponent/userTierData";
+import UserDHM from "@/components/userComponent/userDHM";
+import IfNoPlayLOL from "@/components/userComponent/ifNoPlayLol";
 
-const summoners = ({ params }: { params: { id: string }}) => {
-  console.log('id',params.id)
+const Summoners = async ({ params }: { params: { id: string }}) => {
   const tierData = [
     {
       Title: '솔로랭크',
@@ -26,19 +27,26 @@ const summoners = ({ params }: { params: { id: string }}) => {
       <div className="max-w-7xl mt-10 m-[auto]">
         <UserInfo name={decodeURI(params.id)}/>
         {/*2줄로 나눔*/}
-        <div className="mt-10 flex flex-col gap-3">
-          {tierData.map(({Title,Tier,LP, Win, Rate},key:number) => (
-              <UserTierData
-                Title={Title}
-                Tier={Tier}
-                LP={LP}
-                Win={Win}
-                Rate={Rate}
-              />
-          ))}
+        <div className="block mt-10">
+          <div className="inline-block align-top mr-2 ">
+            {tierData.map(({Title,Tier,LP, Win, Rate}) => (
+                <UserTierData
+                  key={Rate}
+                  Title={Title}
+                  Tier={Tier}
+                  LP={LP}
+                  Win={Win}
+                  Rate={Rate}
+                />
+            ))}
+          </div>
+          <div className="inline-block align-top mt-2 ">
+            <UserDHM />
+            <IfNoPlayLOL />
+          </div>
         </div>
       </div>
     </>
   )
 }
-export default summoners;
+export default Summoners;
