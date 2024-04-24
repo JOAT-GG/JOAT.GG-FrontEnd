@@ -8,7 +8,7 @@ type TierType = {
 
 const UserTierData = ({Title, Tier, LP, Win, Rate}:TierType) => {
   return (
-    <div className="mt-2 p-[14px] bg-gray-700 w-[426px] rounded-md">
+    <div className="mt-2 px-[20px] py-[14px] bg-gray-700 w-[426px] rounded-md">
         <div className="text-gray-400 font-semibold mb-4 pl-2">{Title}</div>
         <div className="flex flex-row">
           <div className="flex flex-row gap-[20px]">

@@ -3,6 +3,7 @@ import UserInfo from "@/components/userComponent/userInfo";
 import UserTierData from "@/components/userComponent/userTierData";
 import UserDHM from "@/components/userComponent/userDHM";
 import IfNoPlayLOL from "@/components/userComponent/ifNoPlayLol";
+import TrollComponent from "@/components/userComponent/trollComponent";
 
 const Summoners = async ({ params }: { params: { id: string }}) => {
   const tierData = [
@@ -42,6 +43,7 @@ const Summoners = async ({ params }: { params: { id: string }}) => {
           </div>
           <div className="inline-block align-top mt-2 ">
             <UserDHM />
+            <TrollComponent />
             <IfNoPlayLOL />
           </div>
         </div>

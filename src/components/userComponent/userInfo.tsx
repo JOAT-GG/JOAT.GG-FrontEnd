@@ -13,6 +13,7 @@ const UserInfo = ({name}:{name:string}) => {
         </div>
         <h1 className="text-[24px] font-bold text-white">{name}</h1>
       </div>
+      {/*todo: 좋아요 싫어요 넣기.*/}
     </>
   )
 }
