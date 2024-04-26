@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
       <Header />
-      <div className="flex flex-col min-h-[100%] items-center">
+      <div className="flex flex-col min-h-[100%] max-w-7xl m-auto">
         {children}
       </div>
       <Footer />
